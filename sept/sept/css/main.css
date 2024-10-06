@@ -583,7 +583,7 @@ html {
 }
 .center{
    font-size: 80px;
-   opacity: 0;
+   
 }
 .center > span{
    animation: light 2.4s ease-in-out infinite;
@@ -597,6 +597,7 @@ html {
    10%, 90%{
        color: #e9dddd;
        text-shadow: none;
+       opacity: 1;
    }
 }
 
