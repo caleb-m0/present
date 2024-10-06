@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+*{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    color: azure;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/tulipanes.jpg);
+    background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+}
+.greetings{
+    font-size: 6rem;
+    font-weight: 900;
+}
+.greetings > span{
+    animation: glow 2.4s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color: #fff;
+        text-shadow: 0 0 18px #c705a4, 0 0 50px #c705a4, 0 0 100px #c705a4;
+    }
+    10%, 90%{
+        color: #e9dddd;
+        text-shadow: none;
+    }
+}
+.greetings > span:nth-child(2){
+    animation-delay: .2s ;
+}
+.greetings > span:nth-child(3){
+    animation-delay: .4s ;
+}
+.greetings > span:nth-child(4){
+    animation-delay: .5s;
+}
+.greetings > span:nth-child(5){
+    animation-delay: .6s;
+}
+.greetings > span:nth-child(6){
+    animation-delay: .8s;
+}.greetings > span:nth-child(7){
+    animation-delay: 1s;
+}.greetings > span:nth-child(8){
+    animation-delay: 1.2s;
+}
+.greetings > span:nth-child(9){
+    animation-delay: 1.4s;
+}
+
+.description{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #111;
+}
+
+@media screen and (max-width:574px){
+    .greetings{
+        display: block;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .description{
+        font-size: 2rem;
+    }
+    
+    .button a{
+        font-size: .5rem;
+    }
+}
+
+.description{
+    font-size: 35px;
+    color:black;
+    text-shadow: 
+    1.2px 1.2px 0px rgb(255, 255, 255), /* Sombra a la derecha */
+    -1.2px -1.2px 0px rgb(255, 255, 255), /* Sombra a la izquierda */
+    1.2px -1.2px 0px rgb(255, 255, 255), /* Sombra arriba derecha */
+    -1.2px 1.2px 0px rgb(255, 255, 255); /* Sombra abajo izquierda */
+    padding: 10px 10px;
+    text-align: center;
+}
+
+/* Estilo para el botón */
+.boton  {
+    background-color: rgb(177, 77, 244); /* Fondo amarillo */
+    border: none; /* Sin bordes */
+    padding: 10px 20px; /* Ajusta el relleno según tu preferencia */
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: 700;
+    color: rgb(242, 239, 241);
+    cursor: pointer;
+    position: relative; /* Necesario para el resplandor */
+    border-radius: 20px; /* Esquinas redondeadas */
+    transition: background-color 0.3s ease-in-out; /* Transición suave para el color de fondo */
+  }
+  
+  /* Estilo para el enlace dentro del botón */
+  .boton a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color:#ebe9e9; /* Hereda el color del texto del botón */
+  }
+  
+  /* Efecto de resplandor al pasar el cursor sobre el botón */
+  .boton:hover {
+    background-color: rgb(243, 32, 151); /* Cambia el color de fondo al pasar el mouse a naranja */
+    box-shadow: 0 0 10px rgb(243, 6, 168), 0 0 20px rgb(8243, 6, 168), 0 0 30px yellow; /* Efecto de resplandor amarillo */
+  }
+  #boton2 {
+    display: none;
+  }
+  #mensaje {
+    display: none; /* Oculto por defecto */
+    margin-top: -15px;
+    font-size: 20px;
+    padding: 10px;
+    color:rgb(255, 255, 255);
+    text-shadow: 
+    1px 1px 0px rgb(0, 0, 0), /* Sombra a la derecha */
+    -1px -1px 0px rgb(0, 0, 0), /* Sombra a la izquierda */
+    1px -1px 0px rgb(0, 0, 0), /* Sombra arriba derecha */
+    -1px 1px 0px rgb(0, 0, 0); /* Sombra abajo izquierda */
+}
+
+

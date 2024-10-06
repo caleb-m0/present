@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Daniela Montoya</title>
+</head>
+<body>
+    <div class="greetings">
+
+        <span>M</span>
+        <span>I</span>
+        &nbsp;
+        <span> </span>
+        <span>N</span>
+        <span>E</span>
+        <span>R</span>
+        <span>I</span>
+        <span>T</span>
+        <span>A</span>
+    </div>
+    <div class="greetings">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="description">
+        <span> Tengo un pequeño detalle para ti  </span>
+    </div>
+    <button class="boton" id="botonPrincipal" onclick="mostrarMensaje()">Presiona aquí</button>
+    <div id="mensaje">Asi me gusta, que me hagan caso jajaja</div>
+    <button class="boton" id="botonSecundario" style="display: none;" onclick="location.href='FLORES.html'">Presiona de nuevo</button>
+
+    <script>
+        function mostrarMensaje() {
+            document.getElementById("botonPrincipal").style.display = "none"; // Oculta el primer botón
+            document.getElementById("mensaje").style.display = "block"; // Muestra el mensaje
+            document.getElementById("botonSecundario").style.display = "block"; // Muestra el segundo botón
+        }
+    </script>
+</body>
+</html>
