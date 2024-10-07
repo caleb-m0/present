@@ -1,7 +1,9 @@
 html {
+  display:flex;
   height: 100%;
   overflow:hidden;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+  align-items: center;
+  background: black;
 }
 
 #stars {
@@ -575,14 +577,16 @@ html {
 
 .container{
    display: flex;
-  width: 550px;
-  height: 500px;
+  width: 38rem;
+  height: 20rem;
   right: -90px;
   bottom: -30px;
+  border-color: aqua;
   position: relative;
+  
 }
 .center{
-   font-size: 80px;
+   font-size: 5rem;
    
 }
 .center > span{
@@ -604,7 +608,7 @@ html {
 .center > span:nth-child(1){
    animation-delay: .2s ;
    position:relative;
-   right: -470px;
+   right: -20rem;
    bottom: -300px;
 }
 .center > span:nth-child(2){
